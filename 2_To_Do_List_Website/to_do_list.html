@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+    <link href="to_do_list.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="whole">
+    <h2 id ="name">  ✍ To-Do List &#128210;</h2>
+    <section id="adding">
+        <p class="utility"> Title</p><input type="text" id="title" class="utility">
+        <p class="utility">Discription</p><textarea id="disc" cols="55" rows="5" class="utility"> </textarea><br>
+        <button id="addbtn" onclick="getdata()" class="btncls">
+            Add In List
+        </button>
+        <button id="clear" onclick="clearall()" class="btncls">
+            Clear All
+        </button>
+    </section>
+    <section id="showing">
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Title</th>
+                    <th>Discription </th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>--</td>
+                    <td>----</td>
+                    <td>--------- </td>
+                    <td><button id="delete" class="btncls">Delete &#128465</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+</section>
+<footer class="footer">
+    copy-rights&copy;All Rights Reserved @SohilPathan
+</footer>
+<script src="to_do_list.js"></script> 
+</body>
+
+</html>
